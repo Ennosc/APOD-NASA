@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Nasa's APoD</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<!--landing page ist das bild von 2000-01-01!!!!
+		datums feld soll leer sein mit placeholder text.
+	-->
+		<header class="header-container">
+			<div class="header-div">
+				<img src="css/nasa.png" alt="nasa logo">
+				<h1>Astronomy Picture of the day</h1>
+			</div>
+		</header>
+		
+		<main class="main-container">
+
+			<section class="main-left-container">
+				<span>Select Day</span>
+				<input type="date" name="" value="">
+				<!-- <input type="date" name="" value=""> -->
+				<button type="button" name="button" id="get-picture" class="button">Get Picture</button>
+				<button type="button" name="button" id="random" class="button">Feeling Lucky</button>
+				<button type="button" name="button" id="recommendation" class="button">Random Recommendations</button>
+			</section>
+
+			<section class="main-right-container">
+
+				<section class="img-section">
+					<img src="arrow-89-48.png" alt="" id="back">
+					<div class="div-img">
+						<p id="title"></p>
+						<img src="" alt="pictures"  id="main-img" class="hidden">
+					<iframe src="" frameborder="0" id="iframe" class="hidden"></iframe>
+					</div>
+					<img src="arrow-25-48.png" alt="" id="forward">
+				</section>
+
+				<section class="text-container">
+					<p id="explanation"></p>
+				</section>
+				
+			</section>
+			
+		</main>
+		
+		<!-- <section>
+			<p id="title"></p>
+			<p id="by "></p>
+		</section> -->
+		<section>
+			<!-- <section class="text-container">
+				<p id="explanation"></p>
+			</section> -->
+		</section>
+		<h5></h5>
+		
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
+
+<!-- 		
+		<h2>Which date?</h1>
+		<p>Try these dates: 2022-02-02, 2022-01-02,2022-01-24,2022-05-05,2020-05-05,2020-10-15,2020-12-24,2016-07-06, fucing video 2021-02-03 adblock deacktivieren</p>
+		<input type="text" placeholder ="yyyy-mm-dd" name="" value="">
+		<input type="date" name="" value="">
+		<button type="button" name="button">Get Picture</button> -->
+			<!-- recommodation button einfügen
+on click fires the recomodations ab -->
+<!-- random button einfügen -->
+<!-- form input kalender der rausklappt -->
+<!-- <h3>Name</h2>
+	<img src="" alt="">
+	
+	<h4>Description</h3> -->
+
+		<!-- video 2008-07-22 -->

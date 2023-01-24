@@ -1,0 +1,198 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+html{
+  font-size: 62,5%;
+  color: rgb(225,225,225);
+
+  background: rgb(25, 25, 25);
+
+  font-family: 'Montserrat', sans-serif;
+}
+.header-container{
+  display: flex;
+  margin-top: 2%;  
+  font-size: 2.6rem;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-bottom: 1.6rem;
+}
+.header-div{
+  display: flex;
+  margin: 0 auto;
+}
+header img{
+  display: block;
+  height: 50px;
+}
+
+#title{
+  text-align: center;
+  margin-bottom: 4px;
+  
+}
+
+.main-container{
+  /* border: 5px dashed rgb(139, 205, 63);  */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-height: 1100px;
+  /* padding-left: 2vw;
+  padding-right: 10vw;  */
+ 
+}
+.main-left-container{
+  /* border: 2px solid rgb(250, 114, 236);  */
+  display: flex;
+  flex-direction: column;
+  flex-basis: 10%;
+  align-items: center;
+ 
+}
+.main-left-container span{
+  text-align: center;
+  /* font-size: 1.2rem; */
+  margin-bottom: 10px;
+}
+input{
+  /* margin-top: 10x; */
+  height: 40px;
+  text-align: center;
+  background-color: #105bd8;
+  color:#ffffff;
+  border-radius: 4px;
+  width: 180px;
+  text-decoration: none;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  padding-right: 13px;
+  padding-left: 30px;
+}
+::-webkit-calendar-picker-indicator{
+  background-color: #ffffff;
+  cursor: pointer;
+}
+section button{
+  margin-top: 10px;
+  height: 40px; 
+  background-color: #105bd8;
+  color:#ffffff;
+  width: 180px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+ 
+} 
+
+#back { filter: brightness(0.8); }
+#forward { filter: brightness(0.8); }
+.button:hover {
+  background-color: rgb(30,43,62);
+  color: rgb(255,255,255);
+  cursor: pointer;
+}
+input:hover{
+  background-color: rgb(30,43,62);
+  color: rgb(255,255,255);
+  
+}
+#back:hover, #forward:hover{
+  cursor: pointer;
+}
+
+.main-right-container{
+  
+  display: flex;
+  flex-direction: column;
+  /* border: 5px dashed blue; */
+  justify-content: center;
+  align-items: center;
+
+}
+.img-section{
+  display: flex;
+  
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  /* width: 900px;
+  height: 600px; */
+  /* border: 8px solid red;   */
+} 
+
+#main-img{
+  display: block;
+  /* border: 4px solid green;  */
+  max-width: 890px;
+  max-height: 590px;
+}
+
+.text-container{
+
+  margin: 2.3% auto 0 auto;
+  width: 76ch;
+  font-size: 1.0rem;
+  line-height: 1.2;
+  padding-left: 2px;
+  padding-right: 10px;
+  /* border: 2px solid yellowgreen; */
+}
+
+
+
+img{
+  display: block;
+}
+ iframe{
+  display: block;
+  margin: 0 auto;
+  /* border: 5px solid rebeccapurple; */
+  width: 801px;
+  height: 450px;
+ 
+}
+
+.hidden{
+  display: none !important;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 1200px ){
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-right-container{
+    margin-top: 2%;
+  }
+  .img-section{
+    
+    width: 80%;
+  }
+  #main-img{
+    display: block;
+    
+    max-width: 100%;
+    /* max-height: 590px; */
+    text-align: center;
+  }
+  .text-container{
+    width: 80%;
+  }
+}
