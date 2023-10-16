@@ -1,4 +1,11 @@
-alert('some days/pictures need loading time')
+//if first time visit add localStorage for alert
+if(!localStorage.getItem("visited")){
+    localStorage.setItem('visited', 1);
+    alertLoading();
+}
+function alertLoading(){
+    alert('Occasionally, certain days or images may require additional loading time');
+}
 
 
 let yyyymmdd = ''
